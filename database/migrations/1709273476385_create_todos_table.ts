@@ -8,7 +8,7 @@ export default class extends BaseSchema {
       table.increments('id')
       table.string('title').notNullable()
       table.string('status').notNullable().defaultTo('active')
-      table.date('assign_date').notNullable().defaultTo(new Date())
+      table.date('assign_date').notNullable()
       table.integer('category_id').references('categories.id').onDelete('CASCADE')
       table.integer('user_id').references('users.id').onDelete('CASCADE')
       table.timestamp('created_at')
