@@ -5,7 +5,7 @@
   "devCommand": "node bin/server.js",
   "builds": [
     {
-      "src": "build/server.js",
+      "src": "build/bin/server.js",
       "use": "@vercel/node",
       "config": { "includeFiles": ["build/**"] }
     }
