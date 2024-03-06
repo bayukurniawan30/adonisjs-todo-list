@@ -3,5 +3,12 @@
   "buildCommand": "node ace build --ignore-ts-errors",
   "outputDirectory": "/build",
   "devCommand": "node bin/server.js",
+  "builds": [
+    {
+      "src": "build/server.js",
+      "use": "@vercel/node",
+      "config": { "includeFiles": ["build/**"] }
+    }
+  ],
   "routes": [{ "src": "/(.*)", "dest": "bin/server.js" }]
 }
