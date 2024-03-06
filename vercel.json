@@ -10,5 +10,5 @@
       "config": { "includeFiles": ["build/**"] }
     }
   ],
-  "routes": [{ "src": "/(.*)", "dest": "bin/server.js" }]
+  "routes": [{ "src": "/(.*)", "dest": "build/bin/server.js" }]
 }
