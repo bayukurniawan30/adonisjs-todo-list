@@ -2,5 +2,6 @@
   "version": 2,
   "buildCommand": "node ace build --ignore-ts-errors",
   "outputDirectory": "/build",
-  "rewrites": [{ "source": "/(.*)", "destination": "/bin/server.js" }]
+  "devCommand": "node bin/server.js",
+  "rewrites": [{ "source": "/(.*)", "destination": "bin/server.js" }]
 }
