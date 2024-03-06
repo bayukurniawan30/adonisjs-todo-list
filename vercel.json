@@ -2,6 +2,12 @@
   "version": 2,
   "buildCommand": "node ace build --ignore-ts-errors",
   "outputDirectory": "/build",
-  "devCommand": "node ace serve --watch",
+  "devCommand": "node bin/server.js",
+  "functions": {
+    "bin/server.js": {
+      "memory": 3009,
+      "maxDuration": 30
+    }
+  },
   "rewrites": [{ "source": "/(.*)", "destination": "bin/server.js" }]
 }
