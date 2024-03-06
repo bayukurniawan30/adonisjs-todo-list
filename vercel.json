@@ -5,8 +5,7 @@
   "devCommand": "node bin/server.js",
   "functions": {
     "bin/server.js": {
-      "memory": 3009,
-      "maxDuration": 30
+      "maxDuration": 10
     }
   },
   "rewrites": [{ "source": "/(.*)", "destination": "bin/server.js" }]
