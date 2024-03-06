@@ -1,11 +1,6 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "build/bin/server.js",
-      "use": "@vercel/node",
-      "config": { "includeFiles": ["build/**"] }
-    }
-  ],
-  "routes": [{ "src": "/(.*)", "dest": "build/bin/server.js" }]
+  "buildCommand": "node ace build --ignore-ts-errors",
+  "outputDirectory": "build",
+  "rewrites": [{ "source": "/(.*)", "destination": "build/bin/server.js" }]
 }
